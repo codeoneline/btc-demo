@@ -1,0 +1,30 @@
+{
+  "name": "btc-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeoneline/btc-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeoneline/btc-demo/issues"
+  },
+  "homepage": "https://github.com/codeoneline/btc-demo#readme",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "bip32": "^3.1.0",
+    "bitcoinjs-lib": "^6.0.1",
+    "ecpair": "^2.1.0",
+    "regtest-client": "^0.2.0",
+    "tiny-secp256k1": "^2.2.1"
+  }
+}
