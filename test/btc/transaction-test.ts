@@ -1,17 +1,17 @@
 import * as assert from 'assert';
 import BIP32Factory from 'bip32';
 import * as ecc from 'tiny-secp256k1';
-import { ECPairFactory } from 'ecpair';
+import ECPairFactory from 'ecpair';
 import { describe, it } from 'mocha';
 import * as bitcoin from 'bitcoinjs-lib';
 import { RegtestUtils } from 'regtest-client';
-import rng from 'randombytes';
 
 const APIPASS = 'Wanchain888' || 'satoshi';
 const APIURL = 'http://35.164.78.133:36893/' || 'https://regtest.bitbank.cc/1';
 const regtestUtils = new RegtestUtils({ APIPASS, APIURL });
 
 const ECPair = ECPairFactory(ecc);
+const rng = require('randombytes');
 const regtest = regtestUtils.network;
 const bip32 = BIP32Factory(ecc);
 
