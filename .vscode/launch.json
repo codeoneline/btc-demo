@@ -16,12 +16,46 @@
     {
       "type": "pwa-node",
       "request": "launch",
-      "name": "try-btc-test",
+      "name": "mocha transaction",
       "skipFiles": [
         "<node_internals>/**"
       ],
       "program": "${workspaceFolder}/node_modules/.bin/_mocha",
-      "args": ["./test/try-btc-test.js"]
+      "args": ["./test/btc/transaction-test.js"]
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "mocha address",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/node_modules/.bin/_mocha",
+      "args": ["./test/btc/address-test.js"]
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "ts-mocha transaction",
+      "skipFiles": [
+        "<node_internals>/**",
+        "node_modules/**"
+      ],
+      "program": "${workspaceFolder}/node_modules/.bin/ts-mocha",
+      "args": ["./test/btc/transaction-test.ts"]
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "node ts transaction",
+      "skipFiles": [
+        "<node_internals>/**",
+        "node_modules/**"
+      ],
+      "args": [
+        "--loader=ts-node/esm",
+        "./src/btc/transaction.ts"
+      ]
     },
   ]
 }
