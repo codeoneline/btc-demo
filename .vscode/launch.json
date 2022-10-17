@@ -39,7 +39,6 @@
       "name": "ts-mocha transaction",
       "skipFiles": [
         "<node_internals>/**",
-        "node_modules/**"
       ],
       "program": "${workspaceFolder}/node_modules/.bin/ts-mocha",
       "args": ["./test/btc/transaction-test.ts"]
@@ -50,12 +49,33 @@
       "name": "node ts transaction",
       "skipFiles": [
         "<node_internals>/**",
-        "node_modules/**"
       ],
       "args": [
         "--loader=ts-node/esm",
         "./src/btc/transaction.ts"
       ]
     },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "node bit-ota-demo",
+      "skipFiles": [
+        "<node_internals>/**",
+      ],
+      "args": [
+        "./src/bit-ota-demo.js"
+      ]
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "node bit-ota-demo-new",
+      "skipFiles": [
+        "<node_internals>/**",
+      ],
+      "args": [
+        "./src/bit-ota-demo-new.js"
+      ]
+    }
   ]
 }

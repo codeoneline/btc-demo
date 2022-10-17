@@ -74,7 +74,7 @@ function getHash(id, user) {
 }
 
 function getP2SHAddr(id, NETWORK, MPC_PK) {
-    // console.log(">>>>>>>>getP2SHAddr ret of getRedeemScript is %s",getRedeemScript(id, MPC_PK).toString('hex'))
+    console.log(">>>>>>>>getP2SHAddr ret of getRedeemScript is %s",getRedeemScript(id, MPC_PK).toString('hex'))
     const p2sh = bitcoin.payments.p2sh({
         network: NETWORK,
         redeem: {
@@ -124,7 +124,6 @@ async function JacobToGpk(){
     
     // let sig = ecPair.sign(inIndex,keyPair,null,SignAll)
     let sig = ecPair.sign(hash)
-    console.log("sig",sig)
 
     // let tx = txb.build()
     let signature = bitcoin.script.signature.encode(sig,bitcoin.Transaction.SIGHASH_ALL)
