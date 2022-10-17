@@ -1,0 +1,46 @@
+*********************************Jacob to gpk (p2pk and p2sh)*******************************************
+getHash id = 0x1234
+getHash user = 0x9da26fc2e1d6ad9fdd46138906b0104ae68a65d8
+getHash id = 0x1234 user=0x9da26fc2e1d6ad9fdd46138906b0104ae68a65d8 hash(id,user) 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+>>>>>>getRedeemScript  MPC_PK is 04b332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d6
+>>>>>>getRedeemScript  id is 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+>>>>>>>>getP2SHAddr ret of getRedeemScript is 20667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd43567576a9146ae1372d767dba6e0b0350b4ed28045273eebfc988ac
+>>>>>>getRedeemScript  MPC_PK is 04b332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d6
+>>>>>>getRedeemScript  id is 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+Deprecation Warning: TransactionBuilder will be removed in the future. (v6.x.x or later) Please use the Psbt class instead. Examples of usage are available in the transactions-psbt.js integration test file on our Github. A high level explanation is available in the psbt.ts and psbt.js files as well.
+DEPRECATED: TransactionBuilder sign method arguments will change in v6, please use the TxbSignArg interface
+tx= 010000000157bfdf8cb5b52aa92b7f6d1d0087f9901fb2fd9af3c74b88459e761065dc1f77000000006a47304402203786291358b4c60997922fbcc8d6d7348a55658cc6d97bb9bfa2a864f8ca099f022061ad649dc429832b2365d6e439e6d9deca4d62fb33d2212cd00d15e4fc68d56f012103c734e31969094b23a14843e0cac012025ceaf46635204d5d5ca80645b5c12967ffffffff02289a01000000000017a914eb90b97825108aa9232323de8abc088de7d30cc287c8af0000000000001976a9146ae1372d767dba6e0b0350b4ed28045273eebfc988ac00000000
+********************************build mpc json********************************************
+getHash id = 0x1234
+getHash user = 0x9da26fc2e1d6ad9fdd46138906b0104ae68a65d8
+getHash id = 0x1234 user=0x9da26fc2e1d6ad9fdd46138906b0104ae68a65d8 hash(id,user) 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+>>>>>>getRedeemScript  MPC_PK is 04b332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d6
+>>>>>>getRedeemScript  id is 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+>>>>>>>>getP2SHAddr ret of getRedeemScript is 20667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd43567576a9146ae1372d767dba6e0b0350b4ed28045273eebfc988ac
+>>>>>>getRedeemScript  MPC_PK is 04b332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d6
+>>>>>>getRedeemScript  id is 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+>>>>>>getRedeemScript  MPC_PK is 04b332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d6
+>>>>>>getRedeemScript  id is 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+TxIn0 sigScipt 0x20667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd43567576a9146ae1372d767dba6e0b0350b4ed28045273eebfc988ac
+TxIn1 sigScipt 0x76a9146ae1372d767dba6e0b0350b4ed28045273eebfc988ac
+mpcJson {"Version":1,"LockTime":0,"From":"0xb332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d6","TxIn":[{"PreviousOutPoint":{"Hash":"d0dba0b6fff69beae696ffa841ac6f3e4332a644c95840e27e579e875bc078e7","Index":0},"SignatureScript":"0x20667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd43567576a9146ae1372d767dba6e0b0350b4ed28045273eebfc988ac","Sequence":4294967295,"PkScript":""},{"PreviousOutPoint":{"Hash":"d0dba0b6fff69beae696ffa841ac6f3e4332a644c95840e27e579e875bc078e7","Index":1},"SignatureScript":"0x76a9146ae1372d767dba6e0b0350b4ed28045273eebfc988ac","Sequence":4294967295,"PkScript":""}],"TxOut":[{"PkScript":"0x76a914af49d8bb3ba52aff1b64346f24dff6d47653c01188ac","Value":145000}]}
+********************************gpk(p2pk and p2sh) to jacob********************************************
+getHash id = 0x1234
+getHash user = 0x9da26fc2e1d6ad9fdd46138906b0104ae68a65d8
+getHash id = 0x1234 user=0x9da26fc2e1d6ad9fdd46138906b0104ae68a65d8 hash(id,user) 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+>>>>>>getRedeemScript  MPC_PK is 04b332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d6
+>>>>>>getRedeemScript  id is 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+>>>>>>>>getP2SHAddr ret of getRedeemScript is 20667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd43567576a9146ae1372d767dba6e0b0350b4ed28045273eebfc988ac
+>>>>>>getRedeemScript  MPC_PK is 04b332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d6
+>>>>>>getRedeemScript  id is 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+gpkShAddr is :2NEin9zqFiggJ5vXjBk8SRpaT6RtkCwCUsK
+Deprecation Warning: TransactionBuilder will be removed in the future. (v6.x.x or later) Please use the Psbt class instead. Examples of usage are available in the transactions-psbt.js integration test file on our Github. A high level explanation is available in the psbt.ts and psbt.js files as well.
+>>>>>>getRedeemScript  MPC_PK is 04b332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d6
+>>>>>>getRedeemScript  id is 667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd4356
+
+@@@@@@@@@@@@@sigHash1[p2sh] is  5dbfc06a149c133c462571d055641d7727904b046360e79efbf10fd9d18b4cf5
+
+@@@@@@@@@@@@@sigHash[p2pk] is  6d67c8f339bbcfe178f9f716267803c72a3302e027b3c20c5fdf80db2dd831f7
+scriptSig is : <Buffer 47 30 44 02 20 22 23 29 ac 7b 88 d0 56 b1 d5 86 c5 31 07 76 20 f8 64 c5 22 f8 03 c7 e5 b4 4b 47 9c 25 cf 90 c7 02 20 3a 2a 2e 7d 5d 1c 95 4a 45 1f 98 ... 88 more bytes>
+txSerialized1 is  0100000002d0dba0b6fff69beae696ffa841ac6f3e4332a644c95840e27e579e875bc078e700000000c647304402204c1689aac3a16929edd0f1d3b5eae574026b038d85279f1a9d540c30b55238d402206428c4be1029f4e524cc24b31347f265ca00f528b41adf95fdfabac60ff79699014104b332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d63b20667176726361a0496de325f84dd0aa7cbb632f258da88b4d616d6cbe27bd43567576a9146ae1372d767dba6e0b0350b4ed28045273eebfc988acffffffffd0dba0b6fff69beae696ffa841ac6f3e4332a644c95840e27e579e875bc078e7010000008a4730440220222329ac7b88d056b1d586c531077620f864c522f803c7e5b44b479c25cf90c702203a2a2e7d5d1c954a451f98dce3e32e44ba4b74baefe2661823e60961db52991a014104b332e3519e3fa5acff123c9faf94054c3929a32be331698d680e43e8a38aeb0527a6ddcc8f1b635a52870ad73fcc89ac87abab5ffcdb3bdef021a376adbb03d6ffffffff0168360200000000001976a914af49d8bb3ba52aff1b64346f24dff6d47653c01188ac00000000
+****************************************************************************

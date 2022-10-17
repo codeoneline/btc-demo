@@ -6,8 +6,8 @@ import { describe, it } from 'mocha';
 import * as bitcoin from 'bitcoinjs-lib';
 import { RegtestUtils } from 'regtest-client';
 
-const APIPASS = 'Wanchain888' || 'satoshi';
-const APIURL = 'http://35.164.78.133:36893/' || 'https://regtest.bitbank.cc/1';
+const APIPASS = 'Wanchain888' || 'Wanchain888' || 'satoshi';
+const APIURL = 'http://127.0.0.1:18443/' || 'http://35.164.78.133:36893/' || 'https://regtest.bitbank.cc/1';
 const regtestUtils = new RegtestUtils({ APIPASS, APIURL });
 
 const ECPair = ECPairFactory(ecc);
